@@ -1,0 +1,55 @@
+<!-- upload page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check</title>
+    <link rel="stylesheet" href="{{url_for('static',filename ='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename ='css/bootstrap.min.css')}}">
+
+</head>
+<style>
+#button {
+    width: 20em;
+    border: 2px solid black;
+    background: #ffe;
+    border-radius: 5px;
+   }
+a {
+    display: block;
+    width: 100%;
+    line-height: 4em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover 
+{
+    color: red;
+    background: #eff;
+}
+    #buttton {
+    width: 20em;
+    border: 2px solid black;
+    background: #ffe;
+    border-radius: 5px;
+    }
+
+</style>
+
+<body>
+<div class="landing">
+    <br>
+<h2 style="color: #f46f25; margin-left: 700px; margin-top: 50px;" >you Uploaded this image {{ value }}
+    <br> are your sure to continue ? </h2>
+
+<div id="button" style="margin-left: 720px; margin-top: 80px; color: white;"><a href="gallery">show Result</a></div>
+<div id="buttton" style="margin-left: 720px; margin-top: 81px;" ><a href="/">Return</a></div>
+
+</div>
+
+</body>
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</html>
